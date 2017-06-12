@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		745169CF1EEE20DC001FE43E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745169CE1EEE20DC001FE43E /* main.m */; };
+		745169D21EEE20DC001FE43E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 745169D11EEE20DC001FE43E /* AppDelegate.m */; };
+		745169D51EEE20DC001FE43E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745169D41EEE20DC001FE43E /* ViewController.m */; };
+		745169D81EEE20DC001FE43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745169D61EEE20DC001FE43E /* Main.storyboard */; };
+		745169DA1EEE20DC001FE43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745169D91EEE20DC001FE43E /* Assets.xcassets */; };
+		745169DD1EEE20DC001FE43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745169DB1EEE20DC001FE43E /* LaunchScreen.storyboard */; };
+		745169E81EEE20DC001FE43E /* GSMultipleChoiceViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745169E71EEE20DC001FE43E /* GSMultipleChoiceViewTests.m */; };
+		745169F31EEE20DD001FE43E /* GSMultipleChoiceViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745169F21EEE20DD001FE43E /* GSMultipleChoiceViewUITests.m */; };
+		74516A1B1EEE211A001FE43E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74516A011EEE2119001FE43E /* Info.plist */; };
+		74516A1C1EEE211A001FE43E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A031EEE2119001FE43E /* MASCompositeConstraint.m */; };
+		74516A1D1EEE211A001FE43E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A061EEE211A001FE43E /* MASConstraint.m */; };
+		74516A1E1EEE211A001FE43E /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A081EEE211A001FE43E /* MASConstraintMaker.m */; };
+		74516A1F1EEE211A001FE43E /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A0A1EEE211A001FE43E /* MASLayoutConstraint.m */; };
+		74516A201EEE211A001FE43E /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A0E1EEE211A001FE43E /* MASViewAttribute.m */; };
+		74516A211EEE211A001FE43E /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A101EEE211A001FE43E /* MASViewConstraint.m */; };
+		74516A221EEE211A001FE43E /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A121EEE211A001FE43E /* NSArray+MASAdditions.m */; };
+		74516A231EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A151EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		74516A241EEE211A001FE43E /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A171EEE211A001FE43E /* View+MASAdditions.m */; };
+		74516A251EEE211A001FE43E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A1A1EEE211A001FE43E /* ViewController+MASAdditions.m */; };
+		74516A2B1EEE2163001FE43E /* redChipListSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A281EEE2163001FE43E /* redChipListSegmentView.m */; };
+		74516A2C1EEE2163001FE43E /* RedChipMultipleChoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74516A2A1EEE2163001FE43E /* RedChipMultipleChoiceView.m */; };
+		74516A331EEE2333001FE43E /* 红筹优化新图标三角-上@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74516A2E1EEE2333001FE43E /* 红筹优化新图标三角-上@2x.png */; };
+		74516A341EEE2333001FE43E /* 红筹优化新图标三角-下-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74516A2F1EEE2333001FE43E /* 红筹优化新图标三角-下-@2x.png */; };
+		74516A351EEE2333001FE43E /* 红筹优化新图标小箭头-上-色-@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74516A301EEE2333001FE43E /* 红筹优化新图标小箭头-上-色-@2x.png */; };
+		74516A361EEE2333001FE43E /* 红筹优化新图标小箭头-下--灰@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74516A311EEE2333001FE43E /* 红筹优化新图标小箭头-下--灰@2x.png */; };
+		74516A371EEE2333001FE43E /* 红筹优化新图标小箭头-下-色@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74516A321EEE2333001FE43E /* 红筹优化新图标小箭头-下-色@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		745169E41EEE20DC001FE43E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 745169C21EEE20DC001FE43E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 745169C91EEE20DC001FE43E;
+			remoteInfo = GSMultipleChoiceView;
+		};
+		745169EF1EEE20DD001FE43E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 745169C21EEE20DC001FE43E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 745169C91EEE20DC001FE43E;
+			remoteInfo = GSMultipleChoiceView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		745169CA1EEE20DC001FE43E /* GSMultipleChoiceView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSMultipleChoiceView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		745169CE1EEE20DC001FE43E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		745169D01EEE20DC001FE43E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		745169D11EEE20DC001FE43E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		745169D31EEE20DC001FE43E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		745169D41EEE20DC001FE43E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		745169D71EEE20DC001FE43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		745169D91EEE20DC001FE43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		745169DC1EEE20DC001FE43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		745169DE1EEE20DC001FE43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745169E31EEE20DC001FE43E /* GSMultipleChoiceViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSMultipleChoiceViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		745169E71EEE20DC001FE43E /* GSMultipleChoiceViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSMultipleChoiceViewTests.m; sourceTree = "<group>"; };
+		745169E91EEE20DC001FE43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745169EE1EEE20DD001FE43E /* GSMultipleChoiceViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSMultipleChoiceViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		745169F21EEE20DD001FE43E /* GSMultipleChoiceViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSMultipleChoiceViewUITests.m; sourceTree = "<group>"; };
+		745169F41EEE20DD001FE43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74516A011EEE2119001FE43E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74516A021EEE2119001FE43E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		74516A031EEE2119001FE43E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		74516A041EEE2119001FE43E /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		74516A051EEE211A001FE43E /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		74516A061EEE211A001FE43E /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		74516A071EEE211A001FE43E /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		74516A081EEE211A001FE43E /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		74516A091EEE211A001FE43E /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		74516A0A1EEE211A001FE43E /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		74516A0B1EEE211A001FE43E /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		74516A0C1EEE211A001FE43E /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		74516A0D1EEE211A001FE43E /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		74516A0E1EEE211A001FE43E /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		74516A0F1EEE211A001FE43E /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		74516A101EEE211A001FE43E /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		74516A111EEE211A001FE43E /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		74516A121EEE211A001FE43E /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		74516A131EEE211A001FE43E /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		74516A141EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		74516A151EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		74516A161EEE211A001FE43E /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		74516A171EEE211A001FE43E /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		74516A181EEE211A001FE43E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		74516A191EEE211A001FE43E /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		74516A1A1EEE211A001FE43E /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		74516A271EEE2163001FE43E /* redChipListSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redChipListSegmentView.h; sourceTree = "<group>"; };
+		74516A281EEE2163001FE43E /* redChipListSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = redChipListSegmentView.m; sourceTree = "<group>"; };
+		74516A291EEE2163001FE43E /* RedChipMultipleChoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedChipMultipleChoiceView.h; sourceTree = "<group>"; };
+		74516A2A1EEE2163001FE43E /* RedChipMultipleChoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedChipMultipleChoiceView.m; sourceTree = "<group>"; };
+		74516A2E1EEE2333001FE43E /* 红筹优化新图标三角-上@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红筹优化新图标三角-上@2x.png"; sourceTree = "<group>"; };
+		74516A2F1EEE2333001FE43E /* 红筹优化新图标三角-下-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红筹优化新图标三角-下-@2x.png"; sourceTree = "<group>"; };
+		74516A301EEE2333001FE43E /* 红筹优化新图标小箭头-上-色-@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红筹优化新图标小箭头-上-色-@2x.png"; sourceTree = "<group>"; };
+		74516A311EEE2333001FE43E /* 红筹优化新图标小箭头-下--灰@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红筹优化新图标小箭头-下--灰@2x.png"; sourceTree = "<group>"; };
+		74516A321EEE2333001FE43E /* 红筹优化新图标小箭头-下-色@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "红筹优化新图标小箭头-下-色@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		745169C71EEE20DC001FE43E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745169E01EEE20DC001FE43E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745169EB1EEE20DD001FE43E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		745169C11EEE20DC001FE43E = {
+			isa = PBXGroup;
+			children = (
+				745169CC1EEE20DC001FE43E /* GSMultipleChoiceView */,
+				745169E61EEE20DC001FE43E /* GSMultipleChoiceViewTests */,
+				745169F11EEE20DD001FE43E /* GSMultipleChoiceViewUITests */,
+				745169CB1EEE20DC001FE43E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		745169CB1EEE20DC001FE43E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				745169CA1EEE20DC001FE43E /* GSMultipleChoiceView.app */,
+				745169E31EEE20DC001FE43E /* GSMultipleChoiceViewTests.xctest */,
+				745169EE1EEE20DD001FE43E /* GSMultipleChoiceViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		745169CC1EEE20DC001FE43E /* GSMultipleChoiceView */ = {
+			isa = PBXGroup;
+			children = (
+				74516A2D1EEE2333001FE43E /* 图标 */,
+				74516A261EEE2163001FE43E /* ChipMultipleChoiceView */,
+				74516A001EEE2119001FE43E /* Masonry */,
+				745169D01EEE20DC001FE43E /* AppDelegate.h */,
+				745169D11EEE20DC001FE43E /* AppDelegate.m */,
+				745169D31EEE20DC001FE43E /* ViewController.h */,
+				745169D41EEE20DC001FE43E /* ViewController.m */,
+				745169D61EEE20DC001FE43E /* Main.storyboard */,
+				745169D91EEE20DC001FE43E /* Assets.xcassets */,
+				745169DB1EEE20DC001FE43E /* LaunchScreen.storyboard */,
+				745169DE1EEE20DC001FE43E /* Info.plist */,
+				745169CD1EEE20DC001FE43E /* Supporting Files */,
+			);
+			path = GSMultipleChoiceView;
+			sourceTree = "<group>";
+		};
+		745169CD1EEE20DC001FE43E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				745169CE1EEE20DC001FE43E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		745169E61EEE20DC001FE43E /* GSMultipleChoiceViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				745169E71EEE20DC001FE43E /* GSMultipleChoiceViewTests.m */,
+				745169E91EEE20DC001FE43E /* Info.plist */,
+			);
+			path = GSMultipleChoiceViewTests;
+			sourceTree = "<group>";
+		};
+		745169F11EEE20DD001FE43E /* GSMultipleChoiceViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				745169F21EEE20DD001FE43E /* GSMultipleChoiceViewUITests.m */,
+				745169F41EEE20DD001FE43E /* Info.plist */,
+			);
+			path = GSMultipleChoiceViewUITests;
+			sourceTree = "<group>";
+		};
+		74516A001EEE2119001FE43E /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				74516A011EEE2119001FE43E /* Info.plist */,
+				74516A021EEE2119001FE43E /* MASCompositeConstraint.h */,
+				74516A031EEE2119001FE43E /* MASCompositeConstraint.m */,
+				74516A041EEE2119001FE43E /* MASConstraint+Private.h */,
+				74516A051EEE211A001FE43E /* MASConstraint.h */,
+				74516A061EEE211A001FE43E /* MASConstraint.m */,
+				74516A071EEE211A001FE43E /* MASConstraintMaker.h */,
+				74516A081EEE211A001FE43E /* MASConstraintMaker.m */,
+				74516A091EEE211A001FE43E /* MASLayoutConstraint.h */,
+				74516A0A1EEE211A001FE43E /* MASLayoutConstraint.m */,
+				74516A0B1EEE211A001FE43E /* Masonry.h */,
+				74516A0C1EEE211A001FE43E /* MASUtilities.h */,
+				74516A0D1EEE211A001FE43E /* MASViewAttribute.h */,
+				74516A0E1EEE211A001FE43E /* MASViewAttribute.m */,
+				74516A0F1EEE211A001FE43E /* MASViewConstraint.h */,
+				74516A101EEE211A001FE43E /* MASViewConstraint.m */,
+				74516A111EEE211A001FE43E /* NSArray+MASAdditions.h */,
+				74516A121EEE211A001FE43E /* NSArray+MASAdditions.m */,
+				74516A131EEE211A001FE43E /* NSArray+MASShorthandAdditions.h */,
+				74516A141EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.h */,
+				74516A151EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.m */,
+				74516A161EEE211A001FE43E /* View+MASAdditions.h */,
+				74516A171EEE211A001FE43E /* View+MASAdditions.m */,
+				74516A181EEE211A001FE43E /* View+MASShorthandAdditions.h */,
+				74516A191EEE211A001FE43E /* ViewController+MASAdditions.h */,
+				74516A1A1EEE211A001FE43E /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		74516A261EEE2163001FE43E /* ChipMultipleChoiceView */ = {
+			isa = PBXGroup;
+			children = (
+				74516A271EEE2163001FE43E /* redChipListSegmentView.h */,
+				74516A281EEE2163001FE43E /* redChipListSegmentView.m */,
+				74516A291EEE2163001FE43E /* RedChipMultipleChoiceView.h */,
+				74516A2A1EEE2163001FE43E /* RedChipMultipleChoiceView.m */,
+			);
+			path = ChipMultipleChoiceView;
+			sourceTree = "<group>";
+		};
+		74516A2D1EEE2333001FE43E /* 图标 */ = {
+			isa = PBXGroup;
+			children = (
+				74516A2E1EEE2333001FE43E /* 红筹优化新图标三角-上@2x.png */,
+				74516A2F1EEE2333001FE43E /* 红筹优化新图标三角-下-@2x.png */,
+				74516A301EEE2333001FE43E /* 红筹优化新图标小箭头-上-色-@2x.png */,
+				74516A311EEE2333001FE43E /* 红筹优化新图标小箭头-下--灰@2x.png */,
+				74516A321EEE2333001FE43E /* 红筹优化新图标小箭头-下-色@2x.png */,
+			);
+			path = "图标";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		745169C91EEE20DC001FE43E /* GSMultipleChoiceView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745169F71EEE20DD001FE43E /* Build configuration list for PBXNativeTarget "GSMultipleChoiceView" */;
+			buildPhases = (
+				745169C61EEE20DC001FE43E /* Sources */,
+				745169C71EEE20DC001FE43E /* Frameworks */,
+				745169C81EEE20DC001FE43E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSMultipleChoiceView;
+			productName = GSMultipleChoiceView;
+			productReference = 745169CA1EEE20DC001FE43E /* GSMultipleChoiceView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		745169E21EEE20DC001FE43E /* GSMultipleChoiceViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745169FA1EEE20DD001FE43E /* Build configuration list for PBXNativeTarget "GSMultipleChoiceViewTests" */;
+			buildPhases = (
+				745169DF1EEE20DC001FE43E /* Sources */,
+				745169E01EEE20DC001FE43E /* Frameworks */,
+				745169E11EEE20DC001FE43E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				745169E51EEE20DC001FE43E /* PBXTargetDependency */,
+			);
+			name = GSMultipleChoiceViewTests;
+			productName = GSMultipleChoiceViewTests;
+			productReference = 745169E31EEE20DC001FE43E /* GSMultipleChoiceViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		745169ED1EEE20DD001FE43E /* GSMultipleChoiceViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 745169FD1EEE20DD001FE43E /* Build configuration list for PBXNativeTarget "GSMultipleChoiceViewUITests" */;
+			buildPhases = (
+				745169EA1EEE20DD001FE43E /* Sources */,
+				745169EB1EEE20DD001FE43E /* Frameworks */,
+				745169EC1EEE20DD001FE43E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				745169F01EEE20DD001FE43E /* PBXTargetDependency */,
+			);
+			name = GSMultipleChoiceViewUITests;
+			productName = GSMultipleChoiceViewUITests;
+			productReference = 745169EE1EEE20DD001FE43E /* GSMultipleChoiceViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		745169C21EEE20DC001FE43E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ygkj;
+				TargetAttributes = {
+					745169C91EEE20DC001FE43E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					745169E21EEE20DC001FE43E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 745169C91EEE20DC001FE43E;
+					};
+					745169ED1EEE20DD001FE43E = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 745169C91EEE20DC001FE43E;
+					};
+				};
+			};
+			buildConfigurationList = 745169C51EEE20DC001FE43E /* Build configuration list for PBXProject "GSMultipleChoiceView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 745169C11EEE20DC001FE43E;
+			productRefGroup = 745169CB1EEE20DC001FE43E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				745169C91EEE20DC001FE43E /* GSMultipleChoiceView */,
+				745169E21EEE20DC001FE43E /* GSMultipleChoiceViewTests */,
+				745169ED1EEE20DD001FE43E /* GSMultipleChoiceViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		745169C81EEE20DC001FE43E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74516A341EEE2333001FE43E /* 红筹优化新图标三角-下-@2x.png in Resources */,
+				74516A1B1EEE211A001FE43E /* Info.plist in Resources */,
+				74516A371EEE2333001FE43E /* 红筹优化新图标小箭头-下-色@2x.png in Resources */,
+				745169DD1EEE20DC001FE43E /* LaunchScreen.storyboard in Resources */,
+				74516A361EEE2333001FE43E /* 红筹优化新图标小箭头-下--灰@2x.png in Resources */,
+				74516A351EEE2333001FE43E /* 红筹优化新图标小箭头-上-色-@2x.png in Resources */,
+				745169DA1EEE20DC001FE43E /* Assets.xcassets in Resources */,
+				74516A331EEE2333001FE43E /* 红筹优化新图标三角-上@2x.png in Resources */,
+				745169D81EEE20DC001FE43E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745169E11EEE20DC001FE43E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745169EC1EEE20DD001FE43E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		745169C61EEE20DC001FE43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74516A2C1EEE2163001FE43E /* RedChipMultipleChoiceView.m in Sources */,
+				74516A231EEE211A001FE43E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				74516A211EEE211A001FE43E /* MASViewConstraint.m in Sources */,
+				74516A1C1EEE211A001FE43E /* MASCompositeConstraint.m in Sources */,
+				74516A221EEE211A001FE43E /* NSArray+MASAdditions.m in Sources */,
+				745169D51EEE20DC001FE43E /* ViewController.m in Sources */,
+				745169D21EEE20DC001FE43E /* AppDelegate.m in Sources */,
+				74516A2B1EEE2163001FE43E /* redChipListSegmentView.m in Sources */,
+				74516A1F1EEE211A001FE43E /* MASLayoutConstraint.m in Sources */,
+				745169CF1EEE20DC001FE43E /* main.m in Sources */,
+				74516A251EEE211A001FE43E /* ViewController+MASAdditions.m in Sources */,
+				74516A241EEE211A001FE43E /* View+MASAdditions.m in Sources */,
+				74516A201EEE211A001FE43E /* MASViewAttribute.m in Sources */,
+				74516A1D1EEE211A001FE43E /* MASConstraint.m in Sources */,
+				74516A1E1EEE211A001FE43E /* MASConstraintMaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745169DF1EEE20DC001FE43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745169E81EEE20DC001FE43E /* GSMultipleChoiceViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		745169EA1EEE20DD001FE43E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745169F31EEE20DD001FE43E /* GSMultipleChoiceViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		745169E51EEE20DC001FE43E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 745169C91EEE20DC001FE43E /* GSMultipleChoiceView */;
+			targetProxy = 745169E41EEE20DC001FE43E /* PBXContainerItemProxy */;
+		};
+		745169F01EEE20DD001FE43E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 745169C91EEE20DC001FE43E /* GSMultipleChoiceView */;
+			targetProxy = 745169EF1EEE20DD001FE43E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		745169D61EEE20DC001FE43E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				745169D71EEE20DC001FE43E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		745169DB1EEE20DC001FE43E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				745169DC1EEE20DC001FE43E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		745169F51EEE20DD001FE43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		745169F61EEE20DD001FE43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		745169F81EEE20DD001FE43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GSMultipleChoiceView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.GSMultipleChoiceView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		745169F91EEE20DD001FE43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GSMultipleChoiceView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.GSMultipleChoiceView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		745169FB1EEE20DD001FE43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GSMultipleChoiceViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.GSMultipleChoiceViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSMultipleChoiceView.app/GSMultipleChoiceView";
+			};
+			name = Debug;
+		};
+		745169FC1EEE20DD001FE43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GSMultipleChoiceViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.GSMultipleChoiceViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GSMultipleChoiceView.app/GSMultipleChoiceView";
+			};
+			name = Release;
+		};
+		745169FE1EEE20DD001FE43E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GSMultipleChoiceViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.GSMultipleChoiceViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GSMultipleChoiceView;
+			};
+			name = Debug;
+		};
+		745169FF1EEE20DD001FE43E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GSMultipleChoiceViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "---.GSMultipleChoiceViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GSMultipleChoiceView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		745169C51EEE20DC001FE43E /* Build configuration list for PBXProject "GSMultipleChoiceView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745169F51EEE20DD001FE43E /* Debug */,
+				745169F61EEE20DD001FE43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		745169F71EEE20DD001FE43E /* Build configuration list for PBXNativeTarget "GSMultipleChoiceView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745169F81EEE20DD001FE43E /* Debug */,
+				745169F91EEE20DD001FE43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		745169FA1EEE20DD001FE43E /* Build configuration list for PBXNativeTarget "GSMultipleChoiceViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745169FB1EEE20DD001FE43E /* Debug */,
+				745169FC1EEE20DD001FE43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		745169FD1EEE20DD001FE43E /* Build configuration list for PBXNativeTarget "GSMultipleChoiceViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745169FE1EEE20DD001FE43E /* Debug */,
+				745169FF1EEE20DD001FE43E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 745169C21EEE20DC001FE43E /* Project object */;
+}
